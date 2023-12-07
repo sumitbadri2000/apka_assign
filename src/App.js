@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from "react";
+import SearchBus from "./Components/SearchBus";
+import Navbar from "./Components/Navbar";
+import { Box } from "@chakra-ui/react";
+// import ListBus from "./components/ListBus";
+// import SeatLayoutSelection from "./components/SeatLayoutSelection";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box bg="rgb(196,196,196)" padding={6}>
+      <Navbar />
+      <SearchBus />
+    </Box>
   );
-}
+};
 
 export default App;
